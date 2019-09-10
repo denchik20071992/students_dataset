@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="failures <= 0.5\nmse = 7.61\nsamples = 100.0%\nvalue = 11.33", fillcolor="#e5813999"] ;
+1 [label="higher_yes <= 0.5\nmse = 6.48\nsamples = 85.3%\nvalue = 11.83", fillcolor="#e58139ac"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="freetime <= 2.5\nmse = 3.06\nsamples = 7.5%\nvalue = 8.9", fillcolor="#e581393c"] ;
+1 -> 2 ;
+3 [label="mse = 1.86\nsamples = 2.1%\nvalue = 10.12", fillcolor="#e581396b"] ;
+2 -> 3 ;
+4 [label="mse = 2.72\nsamples = 5.4%\nvalue = 8.43", fillcolor="#e581392a"] ;
+2 -> 4 ;
+5 [label="school_GP <= 0.5\nmse = 5.91\nsamples = 77.9%\nvalue = 12.11", fillcolor="#e58139b7"] ;
+1 -> 5 ;
+6 [label="mse = 7.96\nsamples = 24.4%\nvalue = 11.36", fillcolor="#e581399a"] ;
+5 -> 6 ;
+7 [label="mse = 4.59\nsamples = 53.5%\nvalue = 12.45", fillcolor="#e58139c4"] ;
+5 -> 7 ;
+8 [label="school_GP <= 0.5\nmse = 4.46\nsamples = 14.7%\nvalue = 8.46", fillcolor="#e581392b"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="traveltime <= 2.5\nmse = 3.86\nsamples = 9.0%\nvalue = 7.71", fillcolor="#e581390f"] ;
+8 -> 9 ;
+10 [label="mse = 3.5\nsamples = 7.2%\nvalue = 7.32", fillcolor="#e5813900"] ;
+9 -> 10 ;
+11 [label="mse = 2.2\nsamples = 1.8%\nvalue = 9.29", fillcolor="#e581394b"] ;
+9 -> 11 ;
+12 [label="Medu <= 3.5\nmse = 3.14\nsamples = 5.7%\nvalue = 9.64", fillcolor="#e5813958"] ;
+8 -> 12 ;
+13 [label="mse = 1.36\nsamples = 5.1%\nvalue = 9.2", fillcolor="#e5813948"] ;
+12 -> 13 ;
+14 [label="mse = 0.0\nsamples = 0.5%\nvalue = 14.0", fillcolor="#e58139ff"] ;
+12 -> 14 ;
+}
